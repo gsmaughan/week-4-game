@@ -28,7 +28,7 @@ function reset(){
 	topaz = Math.floor(Math.random() * 12) + 1; // returns a number between 1 and 12
 	sapphire = Math.floor(Math.random() * 12) + 1; // returns a number between 1 and 12
 
-	$("#targetScore").text("Target Score: " + targetScore); //write target score in target score box. IT WORKS
+	$("#score").text(targetScore); //write target score in target score box. IT WORKS
 	//console.log(diamond); // check the value of diamond.  IT WORKS
 }
 
@@ -45,7 +45,7 @@ function reset(){
 
 $("#diamond").on("click", function(){
 	totalScore += diamond;
-	$("#totalScore").text("Total Score: " + totalScore);
+	$("#total").text(totalScore);
 	// console.log("Total Score: " + totalScore);
 	// console.log("Target Score: " + targetScore)
 		if(totalScore == targetScore){
@@ -64,7 +64,7 @@ $("#diamond").on("click", function(){
 
 $("#ruby").on("click", function(){
 	totalScore += ruby;
-	$("#totalScore").text("Total Score: " + totalScore);
+	$("#total").text(totalScore);
 	console.log(totalScore);
 		if(totalScore == targetScore){
 			wins++;
@@ -80,7 +80,7 @@ $("#ruby").on("click", function(){
 	});
 $("#topaz").on("click", function(){
 	totalScore += topaz;
-	$("#totalScore").text("Total Score: " + totalScore);
+	$("#total").text(totalScore);
 	console.log(totalScore);
 		if(totalScore == targetScore){
 			wins++;
@@ -96,7 +96,7 @@ $("#topaz").on("click", function(){
 	});
 $("#sapphire").on("click", function(){
 	totalScore += sapphire;
-	$("#totalScore").text("Total Score: " + totalScore);
+	$("#total").text(totalScore);
 	console.log(totalScore);
 		if(totalScore == targetScore){
 			wins++;
@@ -112,6 +112,7 @@ $("#sapphire").on("click", function(){
 	});
 $("#nextGame").on("click", function(){
 	totalScore = 0;
+	$("#total").text(totalScore);
 	reset();
 
 });
