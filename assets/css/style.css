@@ -1,0 +1,123 @@
+.container{
+	padding: 0 10px 0 10px;
+	margin: 10px;
+
+}
+
+header{
+	background-color: blue;
+	font-size: 40px;
+	text-align: center;
+	color: white;
+
+}
+
+.rules{
+	background-color: #e6ffff;
+	font-size: 24px;
+	text-align: center;
+	width: 60%;
+	/*height: 210px;*/
+	float: middle;
+	margin: auto;
+	border: 3px solid blue;
+	/*margin: 15px;*/
+}
+
+#targetScore{
+	height: 90px;
+	width: 130px;
+	background-color:   #afc983;
+	float: left;
+	border: 3px solid blue;
+	margin: 25px;
+}
+#record{
+	height: 90px;
+	width: 150px;
+	background-color:   #afc983;
+	float: left;
+	border: 3px solid blue;
+	margin: 20px 40px 20px 40px;
+}
+#display{
+	/*background-color: red;*/
+	margin: 10px;
+	padding: 15px;
+	width: 100%;
+	height: 90px;
+	font-size: 20px;
+	/*float: middle;*/
+}
+
+#diamond{
+	background-image: url("../images/diamond.jpg");
+	height: 100px;
+	width: 100px;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ruby{
+	background-image: url("../images/ruby.jpg");
+	height: 100px;
+	width: 100px;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sapphire{
+	background-image: url("../images/sapphire.jpg");
+	height: 100px;
+	width: 100px;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#topaz{
+	background-image: url("../images/topaz.jpg");
+	height: 100px;
+	width: 100px;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#nextGame{
+	/*background-image: url("../images/topaz.jpg");*/
+	height: 100px;
+	width: 100px;
+	float: right;
+	/*background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
+}
+
+body{
+	text-align: center;
+	background-image: url("../images/wallpaper.jpg");
+	height: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#button{
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+	font-size: 30px;
+	border-style: solid;
+	border-width: medium;
+	border-color: black;
+}
+
+#totalScore{
+	float: right;
+	height: 90px;
+	width: 130px;
+	background-color:   #afc983;
+	/*float: left;*/
+	border: 3px solid blue;
+	margin: 20px 40px 20px 40px;
+}

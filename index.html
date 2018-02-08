@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crystal Game</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/game.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+</head>
+
+<!-- <header>Crystal Game</header> -->
+
+<body>
+
+<div class="container">
+
+<div class="rules">
+	
+              <p>You will be given a target score at the start of the game.</p>
+              <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+              <p>You win the game by matching your total score to a target score, you lose the game if your total score goes above the target score.</p>
+              <p>The value of each crystal is hidden from you until you click on it.</p>
+              <p>Each time when the game starts, the game will change the values of each crystal.</p>
+ </div>
+
+ <div class="row" id="display">
+
+      <div class="col-lg-2" id="targetScore">Target Score:  </div>
+      <div class="col-lg-2" id="record">
+             <!-- <p id="result">Good Luck.</p> -->
+              <p id="wins">Wins:  </p>
+              <p id="losses">Losses:  </p>
+      </div>
+      <div class="col-lg-2" id="totalScore">Total Score
+      	<div id="total"></div>
+      </div>
+      
+
+ </div> <!-- end display div -->
+
+<div class="row" id="buttons">
+	<button id="diamond"></button>
+	<!-- <input type="button" id="ruby" style="background-image: url('assets/images/ruby.jpg')"/> -->
+	<button id="ruby"></button>
+	<button id="sapphire"></button>
+	<button id="topaz"></button>
+	<button id="nextGame">Next Game</button>
+	<!-- <button id="button" onclick="next()">Next Game</button> -->
+
+</div>
+
+
+ </div>
+
+
+</body>
+</html>
