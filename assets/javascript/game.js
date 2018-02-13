@@ -29,18 +29,9 @@ function reset(){
 	sapphire = Math.floor(Math.random() * 12) + 1; // returns a number between 1 and 12
 
 	$("#score").text(targetScore); //write target score in target score box. IT WORKS
-	//console.log(diamond); // check the value of diamond.  IT WORKS
+	
 }
 
-// if(targetScore < 100){
-// 	losses++;
-// 	diamond = 0;
-// 	ruby = 0;
-// 	topaz = 0;
-// 	sapphire = 0;
-// 	$("#losses").text("Losses: " + losses);
-// 	console.log("losses" + losses);
-// }
 
 
 $("#diamond").on("click", function(){
@@ -54,7 +45,7 @@ $("#diamond").on("click", function(){
 			alert("Good job!  Press Next Game button.");
 
 		}
-		if(totalScore > targetScore){
+		else if(totalScore > targetScore){
 			losses++;
 			$("#losses").text("Losses: " + losses);
 			alert("You lost this round.  Press Next Game button.");
@@ -65,13 +56,13 @@ $("#diamond").on("click", function(){
 $("#ruby").on("click", function(){
 	totalScore += ruby;
 	$("#total").text(totalScore);
-	console.log(totalScore);
+	
 		if(totalScore == targetScore){
 			wins++;
 			$("#wins").text("Wins: " + wins);
 			alert("Good job!  Press Next Game button.");
 		}
-		if(totalScore > targetScore){
+		else if(totalScore > targetScore){
 			losses++;
 			$("#losses").text("Losses: " + losses);
 			alert("You lost this round.  Press Next Game button.");
@@ -81,13 +72,13 @@ $("#ruby").on("click", function(){
 $("#topaz").on("click", function(){
 	totalScore += topaz;
 	$("#total").text(totalScore);
-	console.log(totalScore);
+	
 		if(totalScore == targetScore){
 			wins++;
 			$("#wins").text("Wins: " + wins);
 			alert("Good job!  Press Next Game button.");
 		}
-		if(totalScore > targetScore){
+		else if(totalScore > targetScore){
 			losses++;
 			$("#losses").text("Losses: " + losses);
 			alert("You lost this round.  Press Next Game button.");
@@ -97,13 +88,13 @@ $("#topaz").on("click", function(){
 $("#sapphire").on("click", function(){
 	totalScore += sapphire;
 	$("#total").text(totalScore);
-	console.log(totalScore);
+	
 		if(totalScore == targetScore){
 			wins++;
 			$("#wins").text("Wins: " + wins);
 			alert("Good job!  Press Next Game button.");
 		}
-		if(totalScore > targetScore){
+		else if(totalScore > targetScore){
 			losses++;
 			$("#losses").text("Losses: " + losses);
 			alert("You lost this round.  Press Next Game button.");
